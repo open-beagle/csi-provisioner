@@ -1,0 +1,10 @@
+ARG BASE
+
+FROM $BASE
+
+LABEL maintainers="Kubernetes Authors"
+LABEL description="CSI External Provisioner"
+ARG binary=./dist/csi-provisioner
+
+COPY ${binary} csi-provisioner
+ENTRYPOINT ["/csi-provisioner"]
