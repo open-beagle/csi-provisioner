@@ -1,7 +1,7 @@
 platform: 172.16.0.120
 
 workspace:
-  path: src/github.com/kubernetes-csi/node-driver-registrar
+  path: src/github.com/kubernetes-csi/external-provisioner
 
 clone:
   git:
